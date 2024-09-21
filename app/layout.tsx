@@ -11,6 +11,9 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: 'Pizza next-js',
+  icons: {
+    icon: "/logo.png"
+  },
   description: 'My pet project (pizza next-js)',
 };
 
@@ -21,6 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
       <body className={nunito.variable}>
         <Header />
         <main className="min-h-screen">{children}</main>

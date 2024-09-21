@@ -9,3 +9,4 @@ export { Select } from './select';
 export { Skeleton } from './skeleton';
 export { Slider } from './slider';
 export { Tooltip } from './tooltip';
+export { RangeSlider } from './range-slider';

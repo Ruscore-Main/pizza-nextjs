@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React from 'react';
 import { cn } from '@/lib/utils';
@@ -10,7 +10,7 @@ type Item = FilterCheckboxProps;
 interface Props {
   title?: string;
   items: Item[];
-  defaultItems?: Item[];
+  defaultItems: Item[];
   limit?: number;
   searchInputPlaceholder?: string;
   onChange?: (values: string[]) => void;
@@ -25,28 +25,47 @@ export const CheckboxFiltersGroup: React.FC<Props> = ({
   limit = 5,
   searchInputPlaceholder = 'Поиск...',
   onChange,
-  defafultValue,
+  defaultValue,
   className,
 }) => {
+  const [showAll, setShowAll] = React.useState(false);
+  const [searchValue, setSearchValue] = React.useState('');
+
+  const onChangeSeachValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(e.target.value);
+  }
+
+  const list = showAll ? items.filter((item) => item.text.toLowerCase().includes(searchValue.toLowerCase())) : defaultItems.slice(0, limit);
+
   return (
     <div className={cn(className)}>
-      <p className="font-bold mb-3"></p>
+      <p className="font-bold mb-3">Ингридиенты:</p>
 
-      <div className="mb-5">
-        <Input placeholder={searchInputPlaceholder} className="bg-gray-50 border-none"></Input>
-      </div>
+      {showAll && (
+        <div className="mb-5">
+          <Input placeholder={searchInputPlaceholder} value={searchValue} onChange={onChangeSeachValue} className="bg-gray-50 border-none"></Input>
+        </div>
+      )}
       <div className="flex flex-col gap-4 max-h-96 pr-2 overflow-auto scrollbar">
-        {items.map((item, index) => (
-          <FilterCheckbox 
+        {list.map((item, index) => (
+          <FilterCheckbox
             key={index}
             text={item.text}
             value={item.value}
             endAdornment={item.endAdornment}
             checked={false}
-            onCheckedChange={(ids) => console.log(ids)}    
-        />
+            onCheckedChange={(ids) => console.log(ids)}
+          />
         ))}
       </div>
+
+      {items.length > limit && (
+        <div className={showAll ? 'border-t border-t-neutral-100 mt-4' : ''}>
+          <button className="text-primary mt-3" onClick={() => setShowAll(!showAll)}>
+            {showAll ? 'Скрыть' : '+ Показать все'}
+          </button>
+        </div>
+      )}
     </div>
   );
 };

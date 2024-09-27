@@ -34,7 +34,6 @@ const RangeSlider = React.forwardRef(
       if (onValueChange) {
         onValueChange(newValues);
       }
-      console.log(newValues)
     };
 
     return (

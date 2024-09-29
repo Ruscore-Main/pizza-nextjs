@@ -95,7 +95,7 @@ export default function Home() {
                   ]
                 },
               ]} />
-              <ProductsGroupList title="Завтрак" categoryId={1} items={[
+              <ProductsGroupList title="Комбо" categoryId={2} items={[
                 {
                   id: 1,
                   name: 'Пицца 1',

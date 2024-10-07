@@ -51,7 +51,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 4,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -62,7 +62,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 5,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -73,7 +73,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 6,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -84,7 +84,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 7,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -97,7 +97,7 @@ export default function Home() {
               ]} />
               <ProductsGroupList title="Комбо" categoryId={2} items={[
                 {
-                  id: 1,
+                  id: 8,
                   name: 'Пицца 1',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -108,7 +108,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 2,
+                  id: 9,
                   name: 'Пицца 2',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -119,7 +119,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 10,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -130,7 +130,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 11,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -141,7 +141,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 12,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -152,7 +152,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 13,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [
@@ -163,7 +163,7 @@ export default function Home() {
                   ]
                 },
                 {
-                  id: 3,
+                  id: 14,
                   name: 'Пицца 3',
                   imageUrl: 'https://media.dodostatic.net/image/r:292x292/11EE7D6175C10773BFE36E56D48DF7E3.avif',
                   items: [

@@ -22,8 +22,10 @@ const generateProductOption = ({
       size == 20
         ? randomDecimalNumber(190, 400)
         : size == 30
-        ? randomDecimalNumber(400, 650)
-        : randomDecimalNumber(650, 900),
+          ? randomDecimalNumber(400, 650)
+          : !size
+            ? randomDecimalNumber(190, 250)
+            : randomDecimalNumber(650, 900),
     pizzaType,
     size,
   } as Prisma.ProductOptionUncheckedCreateInput;

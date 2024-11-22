@@ -1,4 +1,4 @@
-import { Header } from '@/components/shared';
+import { Header } from '@/shared/components/shared';
 
 export const metadata = {
     title: 'Next.js',

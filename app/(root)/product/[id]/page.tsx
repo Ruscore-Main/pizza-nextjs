@@ -1,9 +1,8 @@
 import React from 'react';
-import { cn } from '@/lib/utils';
 import { prisma } from '@/prisma/prisma-client';
 import { notFound } from 'next/navigation';
-import { Container, PizzaImage, Title } from '@/components/shared';
-import { GroupVariants } from '@/components/shared/group-variants';
+import { Container, PizzaImage, Title } from '@/shared/components/shared';
+import { GroupVariants } from '@/shared/components/shared/group-variants';
 
 interface Props {
     params: { id: string }

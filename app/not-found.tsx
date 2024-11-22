@@ -1,4 +1,4 @@
-import { Container } from '@/components/shared'
+import { Container } from '@/shared/components/shared'
 import Link from 'next/link'
 
 export default function NotFound() {
